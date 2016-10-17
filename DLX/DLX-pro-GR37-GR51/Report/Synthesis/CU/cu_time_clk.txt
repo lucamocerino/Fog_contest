@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : CU_HW_MICROCODE_MEM_SIZE63_OPCODE_SIZE6_func_SIZE11_CW_LENGTH20
+Version: Z-2007.03-SP1
+Date   : Fri Oct  7 03:16:26 2016
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: opcode[1] (input port)
+  Endpoint: func2_reg[2]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  CU_HW_MICROCODE_MEM_SIZE63_OPCODE_SIZE6_func_SIZE11_CW_LENGTH20
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock (input port clock) (rise edge)     0.00       0.00
+  input external delay                     0.00       0.00 f
+  opcode[1] (in)                           0.00       0.00 f
+  U210/ZN (OR3_X1)                         0.10       0.10 f
+  U172/ZN (NOR4_X1)                        0.10       0.20 r
+  U170/ZN (NAND2_X1)                       0.04       0.24 f
+  U176/ZN (INV_X1)                         0.03       0.28 r
+  U161/ZN (NAND3_X1)                       0.05       0.32 f
+  U180/ZN (NOR2_X1)                        0.06       0.39 r
+  U189/ZN (AOI21_X1)                       0.03       0.42 f
+  U154/ZN (OAI33_X1)                       0.09       0.51 r
+  U192/ZN (AOI221_X1)                      0.03       0.54 f
+  U190/ZN (AOI21_X1)                       0.05       0.59 r
+  func2_reg[2]/D (DFF_X1)                  0.01       0.60 r
+  data arrival time                                   0.60
+
+  clock clock (rise edge)                  5.00       5.00
+  clock network delay (ideal)              0.00       5.00
+  func2_reg[2]/CK (DFF_X1)                 0.00       5.00 r
+  library setup time                      -0.03       4.97
+  data required time                                  4.97
+  -----------------------------------------------------------
+  data required time                                  4.97
+  data arrival time                                  -0.60
+  -----------------------------------------------------------
+  slack (MET)                                         4.36
+
+
+1

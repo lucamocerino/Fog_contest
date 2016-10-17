@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : area
+Design : ALL_DATAPATH
+Version: Z-2007.03-SP1
+Date   : Fri Oct  7 15:33:43 2016
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:              259
+Number of nets:               614
+Number of cells:               14
+Number of references:           6
+
+Combinational area:       18869.508107
+Noncombinational area:    4726.820027
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          23596.328125
+Total area:                 undefined
+1

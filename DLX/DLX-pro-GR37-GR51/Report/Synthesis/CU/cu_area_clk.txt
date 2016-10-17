@@ -1,0 +1,25 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : area
+Design : CU_HW_MICROCODE_MEM_SIZE63_OPCODE_SIZE6_func_SIZE11_CW_LENGTH20
+Version: Z-2007.03-SP1
+Date   : Fri Oct  7 03:16:07 2016
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:               54
+Number of nets:               115
+Number of cells:               77
+Number of references:          19
+
+Combinational area:         69.160001
+Noncombinational area:      49.741998
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:           118.902000
+Total area:                 undefined
+1

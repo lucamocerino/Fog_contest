@@ -1,0 +1,22 @@
+
+
+	type rom_type is array (0 to 13) of std_logic_vector(31 downto 0);
+	signal rom : rom_type := 
+									(
+									
+									
+									X"00421026",--	xor r2, r2, r2
+									X"00631826",--	xor r3, r3, r3
+									X"20210005",--	addi r1, r1, 5
+									X"ac610001",--	sw 1(r3), r1
+									X"20420004",--	addi r2, r2, 4
+									X"00631826",--	xor r3, r3, r3
+									X"00421026",--	xor r2, r2, r2
+									X"8d050001",--	lw r5, 1(r8)	--Data Hazard: Stall
+									X"20a50001",--	addi r5,r5,1
+									X"00000000",
+									X"00000000",
+									X"00000000",
+									X"00000000",
+									X"00000000"
+);

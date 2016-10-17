@@ -1,0 +1,43 @@
+Warning: Design 'ALL_DATAPATH' has '50' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ALL_DATAPATH
+Version: Z-2007.03-SP1
+Date   : Fri Oct  7 02:58:39 2016
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: FETCH_U/IR/o[21] (internal pin)
+  Endpoint: selectNop (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ALL_DATAPATH       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  FETCH_U/IR/o[21] (regWithLoad32bit_1)                   0.00       0.00 r
+  FETCH_U/InstructionToDecode[21] (FETCH_UNIT)            0.00       0.00 r
+  DEC_UNIT/instructionWord[21] (DECODE_UNIT)              0.00       0.00 r
+  DEC_UNIT/H_UNIT/RS_address[0] (HAZARD_UNIT)             0.00       0.00 r
+  DEC_UNIT/H_UNIT/U6/ZN (XNOR2_X1)                        0.07       0.07 r
+  DEC_UNIT/H_UNIT/U5/ZN (NAND3_X1)                        0.04       0.10 f
+  DEC_UNIT/H_UNIT/U2/ZN (OAI33_X1)                        0.08       0.18 r
+  DEC_UNIT/H_UNIT/U1/ZN (NAND2_X1)                        0.03       0.21 f
+  DEC_UNIT/H_UNIT/sel1 (HAZARD_UNIT)                      0.00       0.21 f
+  DEC_UNIT/selectNop (DECODE_UNIT)                        0.00       0.21 f
+  selectNop (out)                                         0.00       0.22 f
+  data arrival time                                                  0.22
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

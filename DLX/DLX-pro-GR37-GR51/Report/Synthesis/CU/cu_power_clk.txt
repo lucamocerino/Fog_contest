@@ -1,0 +1,44 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : CU_HW_MICROCODE_MEM_SIZE63_OPCODE_SIZE6_func_SIZE11_CW_LENGTH20
+Version: Z-2007.03-SP1
+Date   : Fri Oct  7 03:17:23 2016
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+CU_HW_MICROCODE_MEM_SIZE63_OPCODE_SIZE6_func_SIZE11_CW_LENGTH20
+                       5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  20.3865 uW   (72%)
+  Net Switching Power  =   7.9037 uW   (28%)
+                         ---------
+Total Dynamic Power    =  28.2902 uW  (100%)
+
+Cell Leakage Power     =   2.6837 uW
+
+1

@@ -1,0 +1,73 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ALL_DATAPATH
+Version: Z-2007.03-SP1
+Date   : Fri Oct  7 02:27:28 2016
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: FETCH_U/IR/R_reg[21]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: FETCH_U/IR/clk_gate_R_reg/U1
+            (negative level-sensitive latch clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ALL_DATAPATH       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  FETCH_U/IR/R_reg[21]/CK (DFF_X1)                        0.00       0.00 r
+  FETCH_U/IR/R_reg[21]/Q (DFF_X1)                         0.12       0.12 r
+  FETCH_U/IR/o[21] (regWithLoad32bit_1)                   0.00       0.12 r
+  FETCH_U/InstructionToDecode[21] (FETCH_UNIT)            0.00       0.12 r
+  DEC_UNIT/instructionWord[21] (DECODE_UNIT)              0.00       0.12 r
+  DEC_UNIT/H_UNIT/RS_address[0] (HAZARD_UNIT)             0.00       0.12 r
+  DEC_UNIT/H_UNIT/U7/ZN (XNOR2_X1)                        0.08       0.20 r
+  DEC_UNIT/H_UNIT/U11/ZN (NAND3_X1)                       0.04       0.24 f
+  DEC_UNIT/H_UNIT/U8/ZN (OAI33_X1)                        0.08       0.32 r
+  DEC_UNIT/H_UNIT/U1/ZN (NAND2_X1)                        0.04       0.36 f
+  DEC_UNIT/H_UNIT/enable_signal (HAZARD_UNIT)             0.00       0.36 f
+  DEC_UNIT/enable_signal_PC_IF_ID (DECODE_UNIT)           0.00       0.36 f
+  FETCH_U/en0 (FETCH_UNIT)                                0.00       0.36 f
+  FETCH_U/IR/load (regWithLoad32bit_1)                    0.00       0.36 f
+  FETCH_U/IR/U9/ZN (OR2_X1)                               0.06       0.42 f
+  FETCH_U/IR/U3/Z (BUF_X1)                                0.06       0.48 f
+  FETCH_U/IR/clk_gate_R_reg/EN (SNPS_CLOCK_GATE_HIGH_regWithLoad32bit_1_0)
+                                                          0.00       0.48 f
+  FETCH_U/IR/clk_gate_R_reg/U1/D (DLL_X1)                 0.01       0.49 f
+  data arrival time                                                  0.49
+
+  clock clock (fall edge)                                25.00      25.00
+  clock network delay (ideal)                             0.00      25.00
+  FETCH_U/IR/clk_gate_R_reg/U1/GN (DLL_X1)                0.00      25.00 f
+  time borrowed from endpoint                             0.00      25.00
+  data required time                                                25.00
+  --------------------------------------------------------------------------
+  data required time                                                25.00
+  data arrival time                                                 -0.49
+  --------------------------------------------------------------------------
+  slack (MET)                                                       24.51
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clock pulse width                                      25.00   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                        24.95   
+  actual time borrow                                      0.00   
+  --------------------------------------------------------------
+
+
+1

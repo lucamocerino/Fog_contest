@@ -1,0 +1,120 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ALL_DATAPATH
+Version: Z-2007.03-SP1
+Date   : Thu Oct  6 22:57:23 2016
+****************************************
+
+Operating Conditions: nom_1.00V_25C   Library: CORE65LPSVT
+Wire Load Model Mode: enclosed
+
+  Startpoint: DEC_UNIT/OPERADN_RT/R_reg[2]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: EXE_UNIT/REG_ALU/R_reg[31]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ALL_DATAPATH       area_12Kto18K         CORE65LPSVT
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  DEC_UNIT/OPERADN_RT/R_reg[2]/CP (HS65_LL_DFPHQX9)       0.00       0.00 r
+  DEC_UNIT/OPERADN_RT/R_reg[2]/Q (HS65_LL_DFPHQX9)        0.12       0.12 r
+  U22284/Z (HS65_LL_IVX9)                                 0.04       0.16 f
+  U22667/Z (HS65_LL_AOI22X1)                              0.08       0.24 r
+  U22668/Z (HS65_LL_OAI212X3)                             0.09       0.33 f
+  U22279/Z (HS65_LL_NAND4ABX3)                            0.19       0.52 f
+  U22927/Z (HS65_LL_IVX4)                                 0.21       0.73 r
+  U23258/Z (HS65_LL_BFX9)                                 0.19       0.92 r
+  U22264/Z (HS65_LL_NOR2X3)                               0.10       1.02 f
+  U21813/Z (HS65_LL_AOI21X2)                              0.14       1.16 r
+  U21812/Z (HS65_LL_NAND2X7)                              0.06       1.22 f
+  U22500/Z (HS65_LL_OAI21X3)                              0.18       1.40 r
+  U23242/Z (HS65_LL_BFX9)                                 0.29       1.69 r
+  U22818/Z (HS65_LL_IVX9)                                 0.14       1.82 f
+  U23244/Z (HS65_LL_NOR2X6)                               0.16       1.98 r
+  U21681/Z (HS65_LL_IVX2)                                 0.10       2.08 f
+  U23309/Z (HS65_LL_MUXI21X2)                             0.32       2.40 r
+  U21628/Z (HS65_LL_AO222X4)                              0.25       2.65 r
+  U21627/Z (HS65_LL_PAOI2X1)                              0.12       2.77 f
+  U21525/Z (HS65_LL_AOI21X2)                              0.20       2.97 r
+  U21511/Z (HS65_LL_NAND3X3)                              0.11       3.08 f
+  U21510/Z (HS65_LL_CBI4I1X5)                             0.05       3.13 r
+  U21509/Z (HS65_LL_PAOI2X1)                              0.11       3.23 f
+  U22726/Z (HS65_LL_PAO2X4)                               0.15       3.38 f
+  U22493/Z (HS65_LL_PAOI2X1)                              0.22       3.61 r
+  U21365/Z (HS65_LL_IVX4)                                 0.10       3.71 f
+  U21364/Z (HS65_LL_OAI12X3)                              0.09       3.80 r
+  U21363/Z (HS65_LL_OAI12X3)                              0.07       3.87 f
+  U21361/Z (HS65_LLS_XOR2X6)                              0.08       3.95 r
+  U21359/Z (HS65_LL_NOR2AX3)                              0.13       4.07 r
+  U21336/Z (HS65_LL_AOI211X3)                             0.07       4.15 f
+  U21334/Z (HS65_LL_NOR2X6)                               0.06       4.21 r
+  U21333/Z (HS65_LL_OAI31X4)                              0.04       4.25 f
+  U22492/Z (HS65_LL_PAOI2X1)                              0.21       4.46 r
+  U21330/Z (HS65_LL_NOR2X6)                               0.10       4.55 f
+  U21329/Z (HS65_LL_NOR2X6)                               0.09       4.64 r
+  U21223/Z (HS65_LL_AOI21X2)                              0.09       4.73 f
+  U21222/Z (HS65_LLS_XOR3X2)                              0.13       4.86 r
+  U21206/Z (HS65_LL_AND2X4)                               0.15       5.01 r
+  U21205/Z (HS65_LL_AOI21X2)                              0.07       5.08 f
+  U21204/Z (HS65_LL_IVX7)                                 0.05       5.12 r
+  U21202/Z (HS65_LL_NAND2X7)                              0.04       5.16 f
+  U21048/Z (HS65_LL_AOI21X2)                              0.07       5.23 r
+  U22630/Z (HS65_LL_NOR2X2)                               0.05       5.28 f
+  U22631/Z (HS65_LL_AOI12X2)                              0.09       5.37 r
+  U22632/Z (HS65_LLS_XOR3X2)                              0.20       5.57 f
+  U22712/Z (HS65_LL_OAI12X2)                              0.15       5.72 r
+  U21033/Z (HS65_LL_CB4I6X9)                              0.13       5.85 r
+  U21024/Z (HS65_LL_CBI4I1X5)                             0.07       5.91 f
+  U22491/Z (HS65_LL_PAOI2X1)                              0.15       6.07 r
+  U20899/Z (HS65_LLS_XNOR2X6)                             0.14       6.21 f
+  U22717/Z (HS65_LL_NOR2X2)                               0.07       6.28 r
+  U22718/Z (HS65_LL_CBI4I1X3)                             0.07       6.35 f
+  U20894/Z (HS65_LL_NAND2X7)                              0.03       6.38 r
+  U20893/Z (HS65_LL_OAI21X3)                              0.06       6.44 f
+  U22496/Z (HS65_LL_PAOI2X1)                              0.23       6.67 r
+  U20827/Z (HS65_LL_AOI21X2)                              0.20       6.87 f
+  U20757/Z (HS65_LL_NOR2X5)                               0.10       6.97 r
+  U22634/Z (HS65_LL_OAI22X1)                              0.08       7.05 f
+  U22635/Z (HS65_LL_NOR2X2)                               0.07       7.12 r
+  U22636/Z (HS65_LL_OAI12X2)                              0.08       7.19 f
+  U20712/Z (HS65_LL_CB4I6X9)                              0.14       7.33 f
+  U20268/Z (HS65_LL_OAI12X3)                              0.05       7.38 r
+  U20267/Z (HS65_LL_AOI21X2)                              0.05       7.43 f
+  U20262/Z (HS65_LL_IVX9)                                 0.05       7.49 r
+  U19066/Z (HS65_LL_NAND2X4)                              0.04       7.52 f
+  U19064/Z (HS65_LL_AOI21X2)                              0.10       7.62 r
+  U19051/Z (HS65_LLS_XOR3X2)                              0.19       7.81 r
+  U19050/Z (HS65_LL_CNIVX3)                               0.08       7.90 f
+  U19049/Z (HS65_LL_OAI212X3)                             0.07       7.97 r
+  U19028/Z (HS65_LL_NOR4ABX2)                             0.17       8.14 r
+  EXE_UNIT/ALU_C/M4/out_res_tri[31]/Z (HS65_LL_ITHX10)
+                                                          0.07       8.20 f
+  U22290/Z (HS65_LL_AO22X9)                               0.09       8.30 f
+  EXE_UNIT/REG_ALU/R_reg[31]/D (HS65_LL_DFPHQX9)          0.00       8.30 f
+  data arrival time                                                  8.30
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  EXE_UNIT/REG_ALU/R_reg[31]/CP (HS65_LL_DFPHQX9)         0.00      10.00 r
+  library setup time                                     -0.15       9.85
+  data required time                                                 9.85
+  --------------------------------------------------------------------------
+  data required time                                                 9.85
+  data arrival time                                                 -8.30
+  --------------------------------------------------------------------------
+  slack (MET)                                                        1.56
+
+
+1
